@@ -13,12 +13,10 @@
   <title> Soil Data- Kishan-Mitra</title>
 </head>
 
-<body>
-  <div id="wrapper" style="background: linear-gradient(90deg, rgba(44,70,82,1) 0%, rgba(171,217,194,1) 77%);">
-
-
+<body style="background: linear-gradient(90deg, rgba(44,70,82,1) 0%, rgba(171,217,194,1) 77%); overflow-x: hidden;">
+  <div id="wrapper" class="container-fluid">
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light ">
       <!-- Container wrapper -->
       <div class="container-fluid">
         <!-- Toggle button -->
@@ -106,17 +104,33 @@
       <!-- Container wrapper -->
     </nav>
 
-    <div class="container-fluid bg-secondary ">
-        <h2 class="text-center">Your Soil Data is --</h2>
-        
+    <div class="d-flex flex-column ">
+
+
+      <div class=" container-fluid  d-flex justify-content-center align-items-center shadow-5 soft "style="height:80vh;">
+
+        <div class="bg-secondary m-5 p-5  border border-secondary rounded-8 shadow-2">
+          <h2 class="text-center text-white">Your <span class="text-danger">Soil</span> Data is --</h2>
+          <div class="card rounded-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <button type="button" class="btn btn-primary">Button</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Copyright -->
+      <footer class="justify-content-end align-self-center">
+        <div class="text-center p-3">
+          © 2024 Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/">Kishan-Mitra.com</a>
+        </div>
+      </footer>
     </div>
-
-
-
-   <!-- Copyright -->
-   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2020 Copyright:
-    <a class="text-white" href="https://mdbootstrap.com/">Kishan-Mitra.com</a>
   </div>
   <script type="text/javascript" src="/js/mdb.min.js"></script>
 </body>
