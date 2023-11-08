@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-  <link rel="stylesheet" href="/css/mdb.min.css">
+  <link rel="stylesheet" href="/css/mdb.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <!-- Google Fonts Roboto -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
@@ -111,7 +111,7 @@
     </nav>
 
 
-<!-- main content -->
+    <!-- main content -->
     <section>
       <div class=" container-fluid  mx-auto bg-secondary w-100  ">
 
@@ -121,9 +121,10 @@
           <div class="input-group">
             <div class="form-outline">
               <input type="search" id="form1" class="form-control" />
-              <label class="form-label" for="form1">Search</label>
+              <label class="form-label" for="form1">Search your item Here...</label>
             </div>
-            <button type="button" class="btn btn-primary text-white">
+            <button type="button" onclick="SearchData()" class="btn btn-primary text-white" data-mdb-toggle="modal"
+              data-mdb-target="#exampleModal">
               <i class="fas fa-search"></i>
             </button>
           </div>
@@ -135,229 +136,242 @@
           <div class="row  d-flex justify-content-around ">
 
             <div class="col-lg-4 col-md-6 col-12 ">
-              <div class="card m-2 mt-3  border border-danger">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the
-                    bulk of the card's content.</p>
-                  <button type="button" class="btn btn-primary">Button</button>
+              <div class="card m-2 mt-3  border border-danger" style="background-color: antiquewhite;">
+                <div class="card-body text-center">
+                  <h5 class="card-title " id="Wheat">Wheat</h5>
+                  <p class="card-text text-success" style="font-size: 2rem;">₹ 25 / Kg</p>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 col-12 ">
-              <div class="card m-2 mt-3  border border-danger">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the
-                    bulk of the card's content.</p>
-                  <button type="button" class="btn btn-primary">Button</button>
+              <div class="card m-2 mt-3  border border-danger" style="background-color: antiquewhite;">
+                <div class="card-body text-center">
+                  <h5 class="card-title " id="Wheat">Rice</h5>
+                  <p class="card-text text-success" style="font-size: 2rem;">₹ 32 / Kg</p>
                 </div>
               </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 col-12 ">
-              <div class="card m-2 mt-3  border border-danger">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the
-                    bulk of the card's content.</p>
-                  <button type="button" class="btn btn-primary">Button</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 ">
-              <div class="card m-2 mt-3  border border-danger">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the
-                    bulk of the card's content.</p>
-                  <button type="button" class="btn btn-primary">Button</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 ">
-              <div class="card m-2 mt-3  border border-danger">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the
-                    bulk of the card's content.</p>
-                  <button type="button" class="btn btn-primary">Button</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 ">
-              <div class="card m-2 mt-3  border border-danger">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the
-                    bulk of the card's content.</p>
-                  <button type="button" class="btn btn-primary">Button</button>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-  </div>
-
-  <h2 class="text-center bold bg-success text-danger">Some Helpful Tips and Trick to Grow your Business</h2>
-  <!-- Helping & news reagrding price related to mnarket  -->
-  <div class="container-fluid py-4 bg-secondary">
-    <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-12 ">
-        <div class="ratio ratio-16x9 m-1">
-          <iframe height="315" src="https://www.youtube.com/embed/Qkeo-OCX0Io?si=abK0UfDaBbZl36gQ&amp;start=1"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12  ">
-        <div class="ratio ratio-16x9 m-1">
-          <iframe height="315" src="https://www.youtube.com/embed/RCqf4NzdbFI?si=sT-pquiXI0ENc4i4"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12  ">
-        <div class="ratio ratio-16x9 m-1">
-          <iframe height="315" src="https://www.youtube.com/embed/4sHoUFQTskM?si=spRPj9RVsBvDl9rj&amp;start=1"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-  </section>
-
-  <footer class="text-center text-lg-start bg-light text-muted">
-    <!-- Section: Social media -->
-    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-      <!-- Left -->
-      <div class="me-5 d-none d-lg-block">
-        <span>Get connected with us on social networks:</span>
-      </div>
-      <!-- Left -->
-  
-      <!-- Right -->
-      <div>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-google"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-      <!-- Right -->
-    </section>
-    <!-- Section: Social media -->
-  
-    <!-- Section: Links  -->
-    <section class="">
-      <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <!-- Content -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              <i class="fas fa-gem me-3"></i>Kishan-Mitra
-            </h6>
-            <p>
-              Our  Company will help you every possible way as we can by providing digital features like real time market pricing , weather condition in your area  logistic trade and an ecommerce platform for products  and many more...
-            </p>
-          </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              Products
-            </h6>
-            <p>
-              <a href="#!" class="text-reset">Urea</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Fertilisers</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Seeds</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Pesticides</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              Useful links
-            </h6>
-            <p>
-              <a href="#!" class="text-reset">Pricing</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Logistic</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Orders</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Help</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-  
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-            <p><i class="fas fa-home me-3"></i> Aurangabad , Bihar India</p>
-            <p>
-              <i class="fas fa-envelope me-3"></i>
-              637golusisngh@gmail.com
-            </p>
-            <p><i class="fas fa-phone me-3"></i> + 91 6371790702</p>
             
+
+            <div class="col-lg-4 col-md-6 col-12 ">
+              <div class="card m-2 mt-3  border border-danger" style="background-color: antiquewhite;">
+                <div class="card-body text-center">
+                  <h5 class="card-title " id="Wheat">Chana</h5>
+                  <p class="card-text text-success" style="font-size: 2rem;">₹ 96 / Kg</p>
+                </div>
+              </div>
+            </div>
+
+              <div class="col-lg-4 col-md-6 col-12 ">
+              <div class="card m-2 mt-3  border border-danger" style="background-color: antiquewhite;">
+                <div class="card-body text-center">
+                  <h5 class="card-title " id="Wheat">Dal</h5>
+                  <p class="card-text text-success" style="font-size: 2rem;">₹ 46 / Kg</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 ">
+              <div class="card m-2 mt-3  border border-danger" style="background-color: antiquewhite;">
+                <div class="card-body text-center">
+                  <h5 class="card-title " id="Wheat">Onion</h5>
+                  <p class="card-text text-success" style="font-size: 2rem;">₹ 25 / Kg</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 ">
+              <div class="card m-2 mt-3  border border-danger" style="background-color: antiquewhite;">
+                <div class="card-body text-center">
+                  <h5 class="card-title " id="Wheat">Apple</h5>
+                  <p class="card-text text-success" style="font-size: 2rem;">₹ 220 / Kg</p>
+                </div>
+              </div>
+            </div>
+
           </div>
-          <!-- Grid column -->
         </div>
-        <!-- Grid row -->
+      </div>
+
+      <h2 class="text-center bold bg-success text-danger">Some Helpful Tips and Trick to Grow your Business</h2>
+      <!-- Helping & news reagrding price related to mnarket  -->
+      <div class="container-fluid py-4 bg-secondary">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 ">
+            <div class="ratio ratio-16x9 m-1">
+              <iframe height="315" src="https://www.youtube.com/embed/Qkeo-OCX0Io?si=abK0UfDaBbZl36gQ&amp;start=1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12  ">
+            <div class="ratio ratio-16x9 m-1">
+              <iframe height="315" src="https://www.youtube.com/embed/RCqf4NzdbFI?si=sT-pquiXI0ENc4i4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12  ">
+            <div class="ratio ratio-16x9 m-1">
+              <iframe height="315" src="https://www.youtube.com/embed/4sHoUFQTskM?si=spRPj9RVsBvDl9rj&amp;start=1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- Section: Links  -->
-  
-    <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-      © 2024 Copyright:
-      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Kishan-Mitra.com</a>
+
+    <footer class="text-center text-lg-start bg-light text-muted">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Kishan-Mitra
+              </h6>
+              <p>
+                Our Company will help you every possible way as we can by providing digital features like real time
+                market pricing , weather condition in your area logistic trade and an ecommerce platform for products
+                and many more...
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Products
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Urea</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Fertilisers</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Seeds</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Pesticides</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Useful links
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Pricing</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Logistic</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Orders</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3"></i> Aurangabad , Bihar India</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                637golusisngh@gmail.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 91 6371790702</p>
+
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2024 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Kishan-Mitra.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </div>
+
+  <!-- Button trigger modal -->
+
+
+  <!-- Search  Modal -->
+  <div class="modal top fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+    data-mdb-backdrop="true" data-mdb-keyboard="true">
+    <div class="modal-dialog  ">
+      <div class="modal-content rounded-8"
+        style="background: linear-gradient(90deg, rgba(44,70,82,1) 0%, rgba(171,217,194,1) 77%);">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">..</h5>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="display">
+
+        </div>
+       
+      </div>
     </div>
-    <!-- Copyright -->
-  </footer>
   </div>
 
   <script type="text/javascript" src="/js/mdb.min.js"></script>
+  <script src="./js/Global.js"></script>
 </body>
 
 </html>

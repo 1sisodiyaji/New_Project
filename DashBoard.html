@@ -5,7 +5,9 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="./farmer.png" type="image/x-icon">
   <link rel="stylesheet" href="/css/mdb.min.css">
+  <link rel="stylesheet" href="styles.css">nk
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <!-- Google Fonts Roboto -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
@@ -13,11 +15,11 @@
   <title> DashBoard - Kishan-Mitra</title>
 </head>
 
-<body>
-  <div id="wrapper" style="background: linear-gradient(90deg, rgba(44,70,82,1) 0%, rgba(171,217,194,1) 77%);">
+<body style="background: linear-gradient(90deg, rgba(44,70,82,1) 0%, rgba(171,217,194,1) 77%); margin: 0%; padding: 0%;">
+  <div id="wrapper">
 
     <!-- navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <!-- Container wrapper -->
       <div class="container-fluid">
         <!-- Toggle button -->
@@ -106,249 +108,343 @@
         <!-- Right elements -->
       </div>
       <!-- Container wrapper -->
-      </nav>
+    </nav>
 
-      <!-- New Section For land Knowledge & trade Data -->
-      
-      <!-- Carousel wrapper -->
-      <div id="halfCarouselExample" class="carousel slide carousel-fade" data-mdb-ride="carousel" style="height: 50vh;">
-        <!-- Indicators -->
-        <div class="carousel-indicators" style="bottom: auto; top: 85%;">
-          <button type="button" data-mdb-target="#halfCarouselExample" data-mdb-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-mdb-target="#halfCarouselExample" data-mdb-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-mdb-target="#halfCarouselExample" data-mdb-slide-to="2"
-            aria-label="Slide 3"></button>
-        </div>
-      
-        <!-- Inner -->
-        <div class="carousel-inner" style="height: 100%;">
-          <!-- Single item -->
-          <div class="carousel-item active" style="height: 100%;">
-            <img src="https://mdbootstrap.com/img/new/textures/full/243.jpg" class="d-block w-100 h-100 object-cover"
-              alt="15 years of experience in the IT industry" />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>15 years of experience in the IT industry</h5>
-              <p>I am in love with technology and have spent half my life developing it</p>
-            </div>
-          </div>
-      
-          <!-- Single item -->
-          <div class="carousel-item" style="height: 100%;">
-            <img src="https://mdbootstrap.com/img/new/textures/full/102.jpg" class="d-block w-100 h-100 object-cover"
-              alt="243 completed projects" />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>243 completed projects</h5>
-              <p>I love challenges and treat each project as my own</p>
-            </div>
-          </div>
-      
-          <!-- Single item -->
-          <div class="carousel-item" style="height: 100%;">
-            <img src="https://mdbootstrap.com/img/new/textures/full/107.jpg" class="d-block w-100 h-100 object-cover"
-              alt="53 satisfied customers" />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>53 satisfied customers</h5>
-              <p>There is no better reward for me than a happy customer</p>
-            </div>
-          </div>
-        </div>
-        <!-- Inner -->
-      
-        <!-- Controls -->
-        <button class="carousel-control-prev" type="button" data-mdb-target="#halfCarouselExample"
-          data-mdb-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-mdb-target="#halfCarouselExample"
-          data-mdb-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    <!-- New Section For land Knowledge & trade Data -->
+
+    <!-- Carousel wrapper -->
+    <div id="halfCarouselExample" class="carousel slide carousel-fade" data-mdb-ride="carousel" style="height: 50vh;">
+      <!-- Indicators -->
+      <div class="carousel-indicators" style="bottom: auto; top: 85%;">
+        <button type="button" data-mdb-target="#halfCarouselExample" data-mdb-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-mdb-target="#halfCarouselExample" data-mdb-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-mdb-target="#halfCarouselExample" data-mdb-slide-to="2"
+          aria-label="Slide 3"></button>
       </div>
 
-      <!-- weather -->
+      <!-- Inner -->
+      <div class="carousel-inner" style="height: 100%;">
+        <!-- Single item -->
+        <div class="carousel-item active" style="height: 100%;">
+          <img src="https://mdbootstrap.com/img/new/textures/full/243.jpg" class="d-block w-100 h-100 object-cover"
+            alt="15 years of experience in the IT industry" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>15 years of experience in the IT industry</h5>
+            <p>I am in love with technology and have spent half my life developing it</p>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item" style="height: 100%;">
+          <img src="https://mdbootstrap.com/img/new/textures/full/102.jpg" class="d-block w-100 h-100 object-cover"
+            alt="243 completed projects" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>243 completed projects</h5>
+            <p>I love challenges and treat each project as my own</p>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item" style="height: 100%;">
+          <img src="https://mdbootstrap.com/img/new/textures/full/107.jpg" class="d-block w-100 h-100 object-cover"
+            alt="53 satisfied customers" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>53 satisfied customers</h5>
+            <p>There is no better reward for me than a happy customer</p>
+          </div>
+        </div>
+      </div>
+      <!-- Inner -->
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-mdb-target="#halfCarouselExample" data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-mdb-target="#halfCarouselExample" data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- number -->
+    <div class="conatiner d-flex justify-content-evenly align-items-center flex-wrap  mt-3">
+      <div class="border border-light m-1 p-3 text-white rounded-5">Users around India</div>
+      <div class=" border border-light m-3 p-3 text-light rounded-5">Revenue From Sales</div>
+      <div class=" border border-light m-3 p-3 text-light rounded-5">engagement With partners</div>
+      <div class=" border border-light m-3 p-3 text-light rounded-5">more than in cities </div>
+
+    </div>
+
+    <!-- weather -->
+    <div class="container w-full ">
+     <div class="wrapper">
+
+      <h1>Weather App</h1>
+
+      <div class="tab-container">
+          <p class="tab" data-userWeather>Your Weather</p>
+          <p class="tab" data-searchWeather>Search Weather</p>
+      </div>
+
+      <div class="weather-container">
+
+          <!-- grant location container-->
+          <div class="sub-container grant-location-container">
+              <img src="./assets/location.png" width="80" height="80" loading="lazy">
+              <p>Grant Location Access</p>
+              <p>Allow Access to get weather Information</p>
+              <button class="btn" data-grantAccess>Grant Access</button>
+          </div>
+
+          <!-- search form -> form-container-->
+          <form class="form-container" data-searchForm>
+              <input placeholder="Search for City..." data-searchInput>
+              <button class="btn" type="submit">
+                  <img src="./assets/search.png"  width="20" height="20" loading="lazy">
+              </button>
+          </form>
+
+          <!--- loading screen container -->
+          <div class="sub-container loading-container">
+              <img src="./assets/loading.gif" width="150" height="150">
+              <p>Loading</p>
+          </div>
+
+          <!-- show weather info -->
+          <div class="sub-container user-info-container">
+
+              <!--city name and Flag-->
+              <div class="name">
+                  <p data-cityName></p>
+                  <img data-countryIcon>
+              </div>
+
+              <!-- weather descriptuion-->
+              <p data-weatherDesc></p>
+              <!--weather Icon-->
+              <img data-weatherIcon>
+              <!--temperature-->
+              <p data-temp></p>
+
+              <!--3 cards - parameters-->
+              <div class="parameter-container">
+
+                  <!--card 1-->
+                  <div class="parameter">
+                      <img src="./assets/wind.png" >
+                      <p>windspeed</p>
+                      <p data-windspeed></p>
+                  </div>
+
+                  <!--card 2-->
+                  <div class="parameter">
+                      <img src="./assets/humidity.png" >
+                      <p>humidity</p>
+                      <p data-humidity></p>
+                  </div>
+
+                  <!--card 3-->
+                  <div class="parameter">
+                      <img src="./assets/cloud.png" >
+                      <p>Clouds</p>
+                      <p data-cloudiness></p>
+                  </div>
+
+              </div>
+
+
+          </div>
 
 
 
-    
+      </div>
 
-    <!-- weather report  -->
-    
+
+  </div>
+  <p>Get 5 days report <span class="text-danger ">Click Here ..</span></p>
+    </div>
+
     <!-- News -->
 
+    
     <!-- Blogs -->
 
     <!-- About Us -->
     <section>
-<!-- Carousel wrapper -->
-<!-- number -->
-<div class="conatiner d-flex justify-content-evenly align-items-center flex-wrap  mt-3">
-<div class="border border-light m-1 p-3 text-white rounded-5">Users around India</div>
-<div class=" border border-light m-3 p-3 text-light rounded-5">Revenue From Sales</div>
-<div class=" border border-light m-3 p-3 text-light rounded-5">engagement With partners</div>
-<div class=" border border-light m-3 p-3 text-light rounded-5">more than in cities </div>
 
-</div>
 
-<!-- 12 cards -->
-<div class="container-fluid">
-  <div class="row">
-      <div class="col-lg-3 col-md-6 col-sm-12 p-3">
-          <div class="card">
+
+      <!-- 12 cards -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+            <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
                 <button type="button" class="btn btn-primary">Button</button>
               </div>
             </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 p-3">
-          <div class="card">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+            <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
                 <button type="button" class="btn btn-primary">Button</button>
               </div>
             </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 p-3">
-          <div class="card">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+            <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
                 <button type="button" class="btn btn-primary">Button</button>
               </div>
             </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 p-3">
-          <div class="card">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+            <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
                 <button type="button" class="btn btn-primary">Button</button>
               </div>
             </div>
-      </div>
-  </div>
-  <div class="row">
-      <div class="col-lg-3 col-md-6 col-sm-12 p-3">
-          <div class="card">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+            <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
                 <button type="button" class="btn btn-primary">Button</button>
               </div>
             </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 p-3">
-          <div class="card">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+            <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
                 <button type="button" class="btn btn-primary">Button</button>
               </div>
             </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 p-3">
-          <div class="card">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+            <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
                 <button type="button" class="btn btn-primary">Button</button>
               </div>
             </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 p-3">
-          <div class="card">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+            <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
                 <button type="button" class="btn btn-primary">Button</button>
               </div>
             </div>
-      </div>
-  </div>
-  <div class="row">
-      <div class="col-lg-3 col-md-6 col-sm-12 p-3">
-          <div class="card">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+            <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
                 <button type="button" class="btn btn-primary">Button</button>
               </div>
             </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 p-3">
-          <div class="card">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+            <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
                 <button type="button" class="btn btn-primary">Button</button>
               </div>
             </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 p-3">
-          <div class="card">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+            <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
                 <button type="button" class="btn btn-primary">Button</button>
               </div>
             </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 p-3">
-          <div class="card">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+            <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
                 <button type="button" class="btn btn-primary">Button</button>
               </div>
             </div>
+          </div>
+        </div>
+
       </div>
-  </div>
-  
-</div>
-</section>
+    </section>
 
     <!-- Contact us -->
     <section>
-    <div class="container "
-    style="width: 100vw; height: 90vh; display:flex; justify-content: center; align-items: center; ">
-    <div class="conatiner border  border-success  rounded bg-secondary " style=" padding:20px;  height:400px; width:600px; margin:auto">
-      <h4 class="text-light text-center">Raise an issue..</h4>
-        <form>
+      <div class="container "
+        style="width: 100vw; height: 90vh; display:flex; justify-content: center; align-items: center; ">
+        <div class="conatiner border  border-success  rounded bg-secondary "
+          style=" padding:20px;  height:400px; width:600px; margin:auto">
+          <h4 class="text-light text-center">Raise an issue..</h4>
+          <form>
             <div class="form-group">
-                <label for="exampleFormControlInput1">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1"
-                    placeholder="Enter Your Email" style="background: rgb(124, 166, 208);">
+              <label for="exampleFormControlInput1">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Email"
+                style="background: rgb(124, 166, 208);">
             </div>
             <div class="form-group">
-                <label for="exampleFormControlSelect1">Issue </label>
-                <select class="form-control" id="exampleFormControlSelect1"
-                    style="background: rgb(124, 166, 208);">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
+              <label for="exampleFormControlSelect1">Issue </label>
+              <select class="form-control" id="exampleFormControlSelect1" style="background: rgb(124, 166, 208);">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
             </div>
             <div class="form-group">
-                <label for="exampleFormControlTextarea1">Description :-</label>
-                <textarea style="background: rgb(124, 166, 208);" class="form-control"
-                    id="exampleFormControlTextarea1" rows="3"></textarea>
+              <label for="exampleFormControlTextarea1">Description :-</label>
+              <textarea style="background: rgb(124, 166, 208);" class="form-control" id="exampleFormControlTextarea1"
+                rows="3"></textarea>
             </div>
             <div class="text-center py-3">
-                <button type="button" class="btn btn-primary">Send</button>
+              <button type="button" class="btn btn-primary">Send</button>
             </div>
 
-        </form>
-    </div>
-</div>
-</section>
+          </form>
+        </div>
+      </div>
+    </section>
 
     <footer class="text-center text-lg-start bg-light text-muted">
       <!-- Section: Social media -->
@@ -471,10 +567,19 @@
       </div>
       <!-- Copyright -->
     </footer>
-  </div>  
-     <!-- Optional JavaScript -->
-     <script type="text/javascript" src="js/mdb.min.js"></script>
-     <!-- Custom scripts -->
-     <script type="text/javascript"></script>
-   </body>
- </html>
+  </div>
+
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript"></script>
+  <script src="/js/Weather.js"></script>
+</body>
+
+</html>
