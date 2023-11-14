@@ -2,5 +2,12 @@
   "name": "mdb-standard-app",
   "version": "6.4.2",
   "homepage": "https://mdbootstrap.com/docs/standard/",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "json-server --watch ./database/db.json"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4",
+    "mysql2": "^3.6.3"
+  }
 }

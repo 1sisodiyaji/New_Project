@@ -1,24 +1,24 @@
-const SearchItem = document.getElementById("form1");
-const Wheat = document.getElementById("Wheat");
-const display = document.getElementById("display");
-
-const url = 'https://commodity-rates-api.p.rapidapi.com/open-high-low-close/2022-01-10?base=USD&symbols=BRENTOIL';
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '8274bf207bmsh1f70c89e32c6c62p12917cjsnca31885f7433',
-		'X-RapidAPI-Host': 'commodity-rates-api.p.rapidapi.com'
-	}
-};
 async function SearchData() {
-try {
-	const response = await fetch(url, options);
-	const result = await response.text();
-	console.log(result);
-	display.innerHTML = result;
-} catch (error) {
-	console.error(error);
-}
-}
-
-
+	try {
+	  const response = await fetch('data.json'); // Replace 'data.json' with the path to your JSON file
+	  const data = await response.json();
+  
+	  // Assuming the JSON structure has an array named 'items'
+	  const items = data.items;
+  
+	  // Display the data
+	  const outputDiv = document.getElementById('display');
+	  outputDiv.innerHTML = '<h2>Data from JSON File:</h2>';
+  
+	  items.forEach(item => {
+		const itemDiv = document.createElement('div');
+		itemDiv.innerHTML = `<strong>Name:</strong> ${item.name}, <strong>Price:</strong> $${item.price}`;
+		outputDiv.appendChild(itemDiv);
+	  });
+	} catch (error) {
+	  console.error('Error fetching data:', error.message);
+	}
+  }
+  
+  // Call the fetch function when the page loads
+  SearchData();

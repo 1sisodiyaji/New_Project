@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-  <link rel="stylesheet" href="/css/mdb.min.css"/>
+  <link rel="stylesheet" href="/css/mdb.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <!-- Google Fonts Roboto -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
@@ -119,12 +119,11 @@
 
         <div class="w-75 mx-auto py-3">
           <div class="input-group">
-            <div class="form-outline">
-              <input type="search" id="form1" class="form-control" />
-              <label class="form-label" for="form1">Search your item Here...</label>
+            <div class="form-outline border border-dark ">
+              <input type="search" id="form1" class="form-control" placeholder="Search Your item here..." />
             </div>
             <button type="button" onclick="SearchData()" class="btn btn-primary text-white" data-mdb-toggle="modal"
-              data-mdb-target="#exampleModal">
+              data-mdb-target="#SearchModal">
               <i class="fas fa-search"></i>
             </button>
           </div>
@@ -152,7 +151,7 @@
                 </div>
               </div>
             </div>
-            
+
 
             <div class="col-lg-4 col-md-6 col-12 ">
               <div class="card m-2 mt-3  border border-danger" style="background-color: antiquewhite;">
@@ -163,7 +162,7 @@
               </div>
             </div>
 
-              <div class="col-lg-4 col-md-6 col-12 ">
+            <div class="col-lg-4 col-md-6 col-12 ">
               <div class="card m-2 mt-3  border border-danger" style="background-color: antiquewhite;">
                 <div class="card-body text-center">
                   <h5 class="card-title " id="Wheat">Dal</h5>
@@ -349,23 +348,23 @@
     </footer>
   </div>
 
-  <!-- Button trigger modal -->
+
 
 
   <!-- Search  Modal -->
-  <div class="modal top fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+  <div class="modal top fade" id="#SearchModal" tabindex="-1" aria-labelledby="#SearchModalLabel" aria-hidden="true"
     data-mdb-backdrop="true" data-mdb-keyboard="true">
     <div class="modal-dialog  ">
       <div class="modal-content rounded-8"
         style="background: linear-gradient(90deg, rgba(44,70,82,1) 0%, rgba(171,217,194,1) 77%);">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">..</h5>
+          <h5 class="modal-title" id="SearchModalLabel">Price:-</h5>
           <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body" id="display">
 
         </div>
-       
+
       </div>
     </div>
   </div>
