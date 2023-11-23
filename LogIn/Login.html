@@ -6,44 +6,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/css/mdb.min.css">
+    <link rel="shortcut icon" href="../img/farmer.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <!-- Google Fonts Roboto -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
 
-    <title> Kishan-Mitra</title>
+    <title> Login-Here Kishan-Mitra</title>
 </head>
 
-<body>
-    <div id="wrapper  " class="d-flex justify-content-center  align-items-center"
-        style=" background: linear-gradient(90deg, rgba(44,70,82,1) 0%, rgba(171,217,194,1) 77%);width: 100vw; height: 100vh;">
+<body style=" background: linear-gradient(90deg, rgba(44,70,82,1) 0%, rgba(171,217,194,1) 77%);width: 100vw; height: 100vh; margin: 0%; padding: 0%; overflow-x: hidden;">
+   
 
-        <div class="container mx-auto border border-success  rounded-5 bg-secondary ">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center m-2">
+                <img src="../img/farmer.png" style="height: 20vh;" alt="">
+                <p style="font-size:2rem; color:rgb(182, 77, 98);" class="text-center">Welcome to Kishan-Mitra ..</p>
+            </div>
             <div>
-                <!-- icons -->
-                <div class="d-flex justify-content-center align-items-center col-lg-12 col-12">
-                    <div
 
-                    style="background-image: url('https://play-lh.googleusercontent.com/5R9wOQprMX-5Ylhbvpe4eYpGyBi5dgwMjiH4XJU4ZEQhLcw3ubnLWMsRBy7gTB-7mhc=w240-h480-rw');
-                    width:20vh;
-                    height:20vh;
-                    border-radius:50%;
-                    align-self: center;
-                    margin: 18px;"
-                    >
-                
-                </div>
-                <div><h2 style="font-size:50px;">Welcome to Wooble-Agriculture ..</h2></div>
-                </div>
                 <!-- Pills navs -->
                 <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link active" id="tab-login" data-mdb-toggle="pill" href="#pills-login" role="tab"
-                            aria-controls="pills-login" aria-selected="true">Login</a>
+                        <a class="nav-link active bg-danger shadow-6 text-light rounded-8" id="tab-login"
+                            data-mdb-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login"
+                            aria-selected="true">Login</a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="tab-register" data-mdb-toggle="pill" href="#pills-register" role="tab"
-                            aria-controls="pills-register" aria-selected="false">Register</a>
+                        <a class="nav-link bg-danger shadow-6 text-light rounded-8" id="tab-register"
+                            data-mdb-toggle="pill" href="#pills-register" role="tab" aria-controls="pills-register"
+                            aria-selected="false">Register</a>
                     </li>
                 </ul>
                 <!-- Pills navs -->
@@ -74,17 +66,18 @@
                             <p class="text-center">or:</p>
 
                             <!-- Email input -->
+                            <p class="error-message d-none text-danger">Please Enter email properly</p>
                             <p class="m-0" style="font-size: medium; font-weight: lighter; color: black;">Email</p>
                             <div class="form-outline mb-4">
-                                <input type="email" id="loginName" class="form-control" />
-                                <label class="form-label" for="loginName">Enter Your  Email .... </label>
+                                <input type="email" id="loginName" class="form-control text-light"
+                                    placeholder="Enter Your Email ...." />
                             </div>
 
                             <!-- Password input -->
                             <p class="m-0" style="font-size: medium; font-weight: lighter; color: black;">Password</p>
                             <div class="form-outline mb-4">
-                                <input type="password" id="loginPassword" class="form-control" />
-                                <label class="form-label" for="loginPassword">Enter Your Password </label>
+                                <input type="password" id="loginPassword" class="form-control text-light"
+                                    placeholder="Enter Your Password" />
                             </div>
 
                             <!-- 2 column grid layout -->
@@ -103,13 +96,12 @@
                                     <a href="forgotPassword.html">Forgot password?</a>
                                 </div>
                             </div>
-
-                            <!-- Submit button -->
-                            <a href="/DashBoard.html">
-                            <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
-                            </a>
+                             <!-- Submit button -->
+                            <button type="submit" onclick="Login()" class="btn btn-primary btn-block mb-4">Sign in</button>
+                           
+                           
                             <!-- Register buttons -->
-                            
+
                         </form>
                     </div>
                     <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
@@ -163,7 +155,8 @@
                                 <label class="form-label" for="registerPassword"> Enter Your Password...</label>
                             </div>
 
-                            <p class="m-0" style="font-size: medium; font-weight: lighter; color: black;">Confirm Password</p>
+                            <p class="m-0" style="font-size: medium; font-weight: lighter; color: black;">Confirm
+                                Password</p>
                             <!-- Repeat Password input -->
                             <div class="form-outline mb-4">
                                 <input type="password" id="registerRepeatPassword" class="form-control" />
@@ -180,9 +173,9 @@
                             </div>
 
                             <!-- Submit button -->
-                            
+
                             <button type="submit" class="btn btn-primary btn-block mb-3">Sign in</button>
-                            
+
                         </form>
                     </div>
                 </div>
@@ -190,10 +183,6 @@
             </div>
         </div>
 
-
-
-
-    </div>
     <script type="text/javascript" src="/js/mdb.min.js"></script>
 </body>
 
