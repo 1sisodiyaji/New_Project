@@ -1,5 +1,6 @@
-{
-    "items": [
+[
+  {
+    "item": [
       {"id": 1, "name": "Rice", "price": 2.99},
       {"id": 2, "name": "Wheat", "price": 1.99},
       {"id": 3, "name": "Grains", "price": 3.49},
@@ -42,4 +43,5 @@
       {"id": 40, "name": "Ginger", "price": 1.59}
     ]
   }
+]
   

@@ -123,10 +123,29 @@
             <div class="form-outline border border-dark ">
               <input type="search" id="SearchItem" class="form-control" placeholder="Search Your item here..." />
             </div>
-            <button type="button" onclick="SearchData()" class="btn btn-primary text-white" data-mdb-toggle="modal"
-              data-mdb-target="#SearchModal">
+            <button type="button" class="btn btn-primary text-white" data-mdb-toggle="modal" data-mdb-target="#SearchModal">
               <i class="fas fa-search"></i>
             </button>
+          </div>
+        </div>
+
+
+        <!-- Search  Modal -->
+        <div class="modal top fade" id="SearchModal" tabindex="-1" aria-labelledby="SearchModalLabel"
+          aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+          <div class="modal-dialog  modal-dialog-centered ">
+            <div class="modal-content rounded-8"
+              style="background: linear-gradient(90deg, rgba(44,70,82,1) 0%, rgba(171,217,194,1) 77%);">
+              <div class="modal-header  border-bottom-0">
+                <h5 class="modal-title text-light" id="SearchModalLabel">Price:-</h5>
+                <button type="button" class="btn-close shadow-0" data-mdb-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h2 class="display1"></h2>
+                <h2 class="display2"></h2>
+              </div>
+
+            </div>
           </div>
         </div>
 
@@ -346,28 +365,7 @@
         <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Kishan-Mitra.com</a>
       </div>
       <!-- Copyright -->
-    </footer> 
-  </div>
-
-
-
-
-  <!-- Search  Modal -->
-  <div class="modal top fade" id="#SearchModal" tabindex="-1" aria-labelledby="#SearchModalLabel" aria-hidden="true"
-    data-mdb-backdrop="true" data-mdb-keyboard="true">
-    <div class="modal-dialog  ">
-      <div class="modal-content rounded-8"
-        style="background: linear-gradient(90deg, rgba(44,70,82,1) 0%, rgba(171,217,194,1) 77%);">
-        <div class="modal-header">
-          <h5 class="modal-title" id="SearchModalLabel">Price:-</h5>
-          <button type="button" class="btn-close shadow-0" data-mdb-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body" id="display">
-
-        </div>
-
-      </div>
-    </div>
+    </footer>
   </div>
 
   <script type="text/javascript" src="/js/mdb.min.js"></script>

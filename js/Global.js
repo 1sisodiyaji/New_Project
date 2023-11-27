@@ -1,40 +1,21 @@
-const InputItem = document.getElementById('SearchItem');
+const searchItem = document.getElementById('SearchItem');
 const display = document.getElementById('display');
 
-async function SearchData() {
-	try {
-	  const response = await fetch();
-	  const data = await response.json();
-	  data.forEach(item => {
-		display.textContent = `${data}`;
-		
-	})
+let http = new XMLHttpRequest();
+http.open('get','data.json',true);
+http.send();
+http.onload = function(){
+	if(this.readyState == 4 && this.status == 200 ){
+		let data = JSON.parse(this.responseText);
+		let output = "";
 
-	  
-	} catch (error) {
-	  console.error('Error fetching data:', error.message);
+		for(let item of data){
+			output += `
+			<div class="product">
+			<h2 class = "display1">${data.name}</h2>
+			<h2 class = "display2">${data.price}</h2>
+			`;
+		}
+		document.querySelector(".display").innerHTML = output;
 	}
-  }
-  
-  // Call the fetch function when the page loads
-  SearchData();
-
-  document.addEventListener('DOMContentLoaded', async () => {
-	try {
-	  // Fetch data from the server
-	  const response = await fetch('http://localhost:3000/api/data');
-	  const data = await response.json();
-  
-	  // Display the data on the webpage
-	  const dataList = document.getElementById('data-list');
-	  data.forEach(item => {
-		const listItem = document.createElement('li');
-		listItem.textContent = `${item.name} - ${item.age} years old`;
-		dataList.appendChild(listItem);
-	  });
-	} catch (error) {
-	  // Handle errors
-	  console.error('Error fetching data:', error);
-	}
-  });
-  
+}

@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "json-server": "^0.17.4",
-    "mysql2": "^3.6.3"
+    "mysql2": "^3.6.3",
+    "nodemailer": "^6.9.7",
+    "toastify-js": "^1.12.0"
   }
 }

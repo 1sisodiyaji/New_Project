@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Contact Us </title>
     <!-- MDB icon -->
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/farmer.png" type="image/x-icon" />
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -123,18 +123,18 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                        <input type="email" class="form-control" id="email"
                             placeholder="Enter Your Email" style="background: rgb(124, 166, 208);">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">Issue </label>
                         <select class="form-control" id="exampleFormControlSelect1"
                             style="background: rgb(124, 166, 208);">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                            <option>Product</option>
+                            <option>Logistic</option>
+                            <option>Pricing</option>  
+                            <option>Feedback</option>
+                            <option>Others</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -143,7 +143,7 @@
                             id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                     <div class="text-center py-3">
-                        <button type="button" class="btn btn-primary">Send</button>
+                        <button type="button" class="btn btn-primary" onclick="sendEmail()">Send</button>
                     </div>
 
                 </form>
@@ -275,5 +275,9 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Custom scripts -->
     <script type="text/javascript"></script>
+    <script src="js/Contact.js"></script>
+    <script src="bundle.js"></script>
+    <script src="js/Server.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   </body>
 </html>
