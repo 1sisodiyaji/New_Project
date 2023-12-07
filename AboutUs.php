@@ -40,7 +40,7 @@
           <!-- Left links -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
             <li class="nav-item">
-              <a class="nav-link " href="/DashBoard.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link " href="/DashBoard.php">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-dark active" href="/AboutUs.html">About Us</a>
@@ -49,10 +49,10 @@
               <a class="nav-link text-dark" href="/Product.html">Product</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark  " href="/Global.html">Global</a>
+              <a class="nav-link text-dark  " href="/Global.php">Global</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="/ContactUs.html">Contact us</a>
+              <a class="nav-link text-dark" href="/ContactUs.php">Contact us</a>
             </li>
           </ul>
           <!-- Left links -->
@@ -62,7 +62,7 @@
         <!-- Right elements -->
         <div class="d-flex align-items-center">
           <!-- Icon -->
-          <a class="text-reset me-3" href="/Shooping/Cart.html">
+          <a class="text-reset me-3" href="/Shopping/Cart.html">
             <i class="fas fa-shopping-cart"></i>
           </a>
 
