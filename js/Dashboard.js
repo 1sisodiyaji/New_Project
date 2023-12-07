@@ -1,4 +1,4 @@
-  const targetNumber1 =12729 ;
+  const targetNumber1 =12279 ;
   const counterElement1 = document.getElementById('counter1');
   function displayCounting(targetNumber1, counterElement1) {
     for (let i = 0; i <= targetNumber1; i++) {
@@ -10,7 +10,7 @@
   displayCounting(targetNumber1,counterElement1);
   
 
-  const targetNumber2 = 1782323;
+  const targetNumber2 = 1789745;
   const counterElement2 = document.getElementById('counter2');
   function displayCounting2(targetNumber2, counterElement2) {
     for (let i = 0; i <= targetNumber2; i++) {

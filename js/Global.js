@@ -1,21 +1,32 @@
-const searchItem = document.getElementById('SearchItem');
-const display = document.getElementById('display');
+function search() {
+	const searchItem = document.getElementById('SearchItem').value;
+	const display1 = document.getElementById('display1'); // Assuming 'display1' is an element ID
+	const display2 = document.getElementById('display2'); // Assuming 'display2' is an element ID
+	const message = document.getElementById('error-message');
 
-let http = new XMLHttpRequest();
-http.open('get','data.json',true);
-http.send();
-http.onload = function(){
-	if(this.readyState == 4 && this.status == 200 ){
-		let data = JSON.parse(this.responseText);
-		let output = "";
-
-		for(let item of data){
-			output += `
-			<div class="product">
-			<h2 class = "display1">${data.name}</h2>
-			<h2 class = "display2">${data.price}</h2>
-			`;
-		}
-		document.querySelector(".display").innerHTML = output;
+	if (searchItem === "") {
+		message.textContent = "Please fill the item";
+	} else {
+		
+		$.ajax({
+			url: '../ajax/search.php',
+			method: 'POST',
+			data: {
+				searchItem: searchItem
+			},
+			dataType: 'json',
+			success: function (response) {
+				if (response && response.type === 'success' && response.display1 && response.display2) {
+					display1.textContent = response.display1;
+					display2.textContent = response.display2;
+					$('#SearchModal').modal('show');
+				}else {
+					message.textContent = response.message;
+				}
+			},
+			error: function (xhr, status, error) {
+			message.textContent = "error found";
+			}
+		});
 	}
 }
